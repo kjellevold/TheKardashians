@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#forside {
+    padding-top: -10px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./img/theKardashians.jpg");
+
+    box-sizing: unset;
+    background-size: cover;
+    background-size: center bottom;
+    background-attachment: fixed;
+    
+}
+
+#forside h1 {
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 29rem;
+    line-height: 10rem;
+    left: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: pink;
+    width: 100%;
+    font-size: 13rem;
+    pointer-events: none;
+}
+
+#map {
+    overflow: visible;
+    height: 90vh;
+    border-bottom: solid white 3rem;
+    margin: 0 2rem 2rem 2rem;
+    
+}
+
+nav {
+    max-width: 70vw;
+    overflow: auto;
+    white-space: nowrap;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+nav > div {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0 2rem;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+nav  article * {
+    pointer-events: none;
+}
+
+nav article h1 {
+    cursor: pointer;
+    padding: 1rem  1rem 0 1rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    text-align: center;
+}
+
+.marker {
+    background-image: url('./img/marker.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#foto {
+    position: absolute;
+    top: 46rem;
+    right: 3rem;
+    max-height: 420px;
+    width: 350px;
+    background-color: white;
+    display: none;
+}
+
+#foto img {
+    display: block;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+}
+
+#foto #text {
+    padding-left: 1rem;
+    padding-top: 0;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 200px;
+    overflow: scroll;
+}
+
+#foto #text h1 {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+#foto #text h2 {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+#foto #text h3 {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+#foto #text p {
+    margin: 0;
+    padding: 0.5rem 1rem 1rem 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+#money h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: pink;
+    width: 100%;
+    font-size: 7rem;
+}
+
+#container {
+    position: absolute;
+    width: 70vw;
+    height: 35rem;
+    float: right;
+    right: 2rem;
+    padding: 0 8rem 0 2rem;
+}
+
+#btn {
+    float: left;
+    display: grid;
+    grid-auto-flow: row;
+    width: 5rem;
+    padding: .5rem;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    white-space: nowrap;
+    color: black;
+    
+}
+
+#money > #btn > button {
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

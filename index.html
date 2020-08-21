@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Kardashians</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        
+        <section id="forside">
+            <h1>The Kardashians</h1>
+        </section>
+
+        <section>
+            <nav id="nav">
+                <div>
+                    <article data-lng="-118.893359" data-lat="34.058533" data-bilde="img/Caitlyn.jpg" data-name="Caitlyn Jenner" data-home="Malibu" data-price="$3.5 million" data-info="A beautiful property with four bedrooms, three-and-a-half bathrooms, a pool, a hot tub, an outdoor dining area with two large patios, a full bar and a three-car garage. ">
+                        <h1>Caitlyn Jenner</h1>
+                    </article>
+
+                    <article data-lng="-118.666602" data-lat="34.169160" data-bilde="img/KrisJenner.png" data-name="Kris Jenner" data-home="Hidden Hills" data-price="$9.925 million" data-info="Just the master bedroom alone  boasts a fireplace, wet bar, spa, steam room, gym and balcony.">
+                        <h1>Kris Jenner</h1>
+                    </article>
+            
+                    <article data-lng="-118.676802" data-lat="34.128243" data-bilde="img/Kourtney.png" data-name="Kourtney Kardashian" data-home="Calabasas" data-price="$8.5 million" data-info="The home featured on the cover of Architectural Digest and has six bedrooms and nine bathrooms.">
+                    <h1>Kourtney Kardashian</h1>
+                    </article>
+            
+                    <article data-lng="-118.667679" data-lat="34.170185" data-bilde="img/Kim.png" data-name="Kim Kardashian" data-home="Hidden Hills" data-price="$20 million" data-info="There’s even a sporting court, pool house, and guest house on the property. The lovely cabin-styled mansion has a modern twist and a three-island kitchen and has 8 fireplace. The dream home has 8-bedrooms, 10-bathrooms, and as some of you know, Kim added a basketball court for Kanye’s birthday.">
+                        <h1>Kim Kardashian</h1>
+                    </article>
+            
+                    <article data-lng="-118.671447" data-lat="34.128499" data-bilde="img/Khloe.png" data-name="Khloe Kardashian" data-home="Calabasas" data-price="$7.2 million" data-info="She bought the  Mediterranean-style home off Justin Bieber in 2014. The 9,214-square-foot home includes a 200-bottle wine cellar, six fireplaces, a pool, a guesthouse, and two garages.">
+                        <h1>Khloe Kardashian</h1>
+                    </article>
+
+                    <article data-lng="-118.679295" data-lat="34.138017" data-bilde="img/Rob.jpg" data-name="Rob Kardashian" data-home="Calabasas" data-price="$2.285 million" data-info="His former house, sold in 2017.">
+                        <h1>Rob Kardashian</h1>
+                    </article>
+            
+                    <article data-lng="-118.437389" data-lat="34.137973" data-bilde="img/Kendall.png" data-name="Kendall Jenner" data-home="Beverly Hills" data-price="$8.55 million" data-info="The Spanish-style home, purchased from Charlie Sheen, is 6,625 square feet and features five beds, six baths, a fountain, a pool, a movie theater, a tennis court, a spa, and a playground.">
+                        <h1>Kendall Jenner</h1>
+                    </article>
+            
+                    <article data-lng="-118.652584" data-lat="34.159773" data-bilde="img/Kylie.png" data-name="Kylie Jenner" data-home="Hidden Hills" data-price="$13.4 million" data-info="The home is reportedly 9,860 square feet, and includes seven bedrooms and 10 bathrooms.">
+                        <h1>Kylie Jenner</h1>
+                    </article>
+                </div>
+            </nav>
+
+            <div id="map"></div>
+        
+            <div id="foto">
+                <img >
+                <div id="text">
+                    <h1></h1>
+                    <h2></h2>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="money">
+            <h1>Where does the money come from?</h1>
+            <div id="btn">
+                <button data-person="Caitlyn">Caitlyn Jenner</button>
+                <button data-person="Kris">Kris Jenner</button>
+                <button data-person="Kourtney">Kourtney Kardashian</button>
+                <button data-person="Kim">Kim Kardashian</button>
+                <button data-person="Khloe">Khloe Kardashian</button>
+                <button data-person="Rob">Rob Kardashian</button>
+                <button data-person="Kendall">Kendall Jenner</button>
+                <button data-person="Kylie">Kylie Jenner</button>
+            </div>
+
+
+            <div id="container"></div>
+        </section>
+
+
+    </main>
+
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <script src="./index.js"></script>    
+    <script src="./kardashianDiagram.js"></script>
+</body>
+</html>
